@@ -10,6 +10,11 @@
   <meta name="author" content="Gloria Salon Medan">
   <title>Gloria Salon Medan - Salon Terbaik di Medan</title>
 
+  
+    <!-- scrollrevealjs -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  
   <!-- Bootstrap core CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -75,7 +80,7 @@
 
 
 <main class="container main-content">
-  <div class="jumbotron" style="background: linear-gradient(135deg, #8834bb 0%, #2e0072 25%, #0d0d0d 75%, #48006a 100%); color: white; padding: 30px; clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); padding-bottom: 50px; border-bottom: 5px solid #FFD700;">
+  <div class="jumbotron bergerak-samping" style="background: linear-gradient(135deg, #8834bb 0%, #2e0072 25%, #0d0d0d 75%, #48006a 100%); color: white; padding: 30px; clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); padding-bottom: 50px; border-bottom: 5px solid #FFD700;">
     <div class="container text-center">
       <h1 class="display-4" style="font-family: 'Arial', sans-serif; font-weight: bold;">Salon Gloria Medan Home Service</h1>
       <p class="lead" style="font-family: 'Arial', sans-serif; font-weight: bold;">Kami adalah ahli dalam makeup, hair do, dan sulam alis.</p>
@@ -89,7 +94,7 @@
   <div class="bg-light p-5 rounded">
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 bergerak">
           <div class="card" style="border: 5px solid #FFD700;">
             <img src="sulamalis.jpg" class="card-img-top" alt="Product 1">
             <div class="card-body">
@@ -99,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 bergerak">
           <div class="card" style="border: 5px solid #FFD700;">
             <img src="sulam.jpg" class="card-img-top" alt="Product 2">
             <div class="card-body">
@@ -111,7 +116,7 @@
         </div>
       </div>
       <div class="row mt-3">
-        <div class="col-md-6">
+        <div class="col-md-6 bergerak">
           <div class="card" style="border: 5px solid #FFD700;">
             <img src="pngkasrambut.jpg" class="card-img-top" alt="Product 3">
             <div class="card-body">
@@ -121,7 +126,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 bergerak">
           <div class="card" style="border: 5px solid #FFD700;">
             <img src="catrambut.jpg" class="card-img-top" alt="Product 4">
             <div class="card-body">
@@ -164,4 +169,29 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   
 </body>
+
+  
+
+<!-- ScrollReveal.js -->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.bergerak', {
+        delay: 200,
+        duration: 1000,
+        distance: '50px',
+        easing: 'ease-in-out',
+        origin: 'bottom',
+        reset: true
+    });
+
+
+    ScrollReveal().reveal('.bergerak-samping', {
+        delay: 200,
+        duration: 1000,
+        distance: '50px',
+        easing: 'ease-in-out',
+        origin: 'left',
+        reset: true
+    });
+</script>
 </html>
